@@ -1,0 +1,19 @@
+CREATE TABLE stu(
+ id CHAR(6) PRIMARY KEY,
+ name VCHAR(20),
+ age INT,
+ sex INT,
+ tel VCHAR(11)
+);
+
+    ALTER TABLE stu ADD(address vchar(50));
+
+INSERT INTO stu(id,name,age,sex,tel,address) VALUES('1','xiaohong',20,1,'12345678912')
+
+INSERT INTO stu(id,name,age,sex,tel,adress) VALUES('2','xiaohong',20,0,'12345678912')
+
+INSERT INTO stu(id,name,age,sex,tel,address) VALUES('3','xiaohong',20,1,'12345678912')
+
+INSERT INTO stu(id,name,age,sex,tel,address) VALUES('4','xiaohong',20,0,'12345678912')
+
+INSERT INTO stu(id,name,age,sex,tel,address) VALUES('5','xiaohong',2,1,'12345678912')
