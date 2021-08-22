@@ -6,13 +6,18 @@ public class SingleTon {
     private SingleTon(){
 
     }
-    public static void getInstance(){
+    public static SingleTon getInstance(){
         if (singleTon==null){
-            synchronized (singleTon.getClass()){
+            synchronized (singleTon){
                 if (singleTon == null){
                     singleTon = new SingleTon();
                 }
             }
         }
+        return singleTon;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(SingleTon.getInstance());
     }
 }
