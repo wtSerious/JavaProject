@@ -35,7 +35,10 @@ public class Main4 {
         copyFile("D:\\result\\final_result\\cpvton\\"+linetxt+".jpg","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\cpvton\\"+linetxt+".jpg");
         copyFile("D:\\result\\final_result\\cpvton_plus\\"+linetxt+".jpg","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\cpvtonplus\\"+linetxt+".jpg");
         copyFile("D:\\result\\final_result\\clothflow_result\\cross_cloth_result_viton_noarms\\img\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\clothflow\\"+linetxt+".png");
-        copyFile("D:\\result\\final_result\\mine_result_gan3\\cross_result_viton_addpants\\img\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\mine\\"+linetxt+".png");
+        copyFile("D:\\result\\final_result\\cross_result_viton_addpants_new_multiscale_epoch20\\img\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\mine\\"+linetxt+".png");
+        copyFile("D:\\result\\final_result\\result_viton_addpants_new_multiscale_epoch20_new2\\img\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\mine_new\\"+linetxt+".png");
+        copyFile("D:\\result\\final_result\\ACGAN\\"+linetxt+".jpg","C:\\Users\\ruanjie\\Desktop\\cpvton_imgs\\"+linetxt+"\\acgan\\"+linetxt+".jpg");
+
     }
 
     public static void copyFile(String oldPath, String newPath) {
@@ -83,6 +86,12 @@ public class Main4 {
         dir.mkdir();
         String subdir6 = dirPath+"\\"+"cpvtonplus";
         dir = new File(subdir6);
+        dir.mkdir();
+        String subdir7 = dirPath+"\\"+"acgan";
+        dir = new File(subdir7);
+        dir.mkdir();
+        String subdir8 = dirPath+"\\"+"mine_new";
+        dir = new File(subdir8);
         dir.mkdir();
     }
 

@@ -37,6 +37,10 @@ public class Main3 {
         copyFile("D:\\result\\final_result\\mine_result_gan3\\cross_result2_nomask\\full\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\imgs\\"+linetxt+"\\womask\\"+linetxt+".png");
         copyFile("D:\\result\\final_result\\mine_result_gan3\\cross_result2_wo_iterative\\full\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\imgs\\"+linetxt+"\\woiterative\\"+linetxt+".png");
         copyFile("D:\\result\\final_result\\mine_result_gan3\\cross_result2_wo_featurewarp_epoch8\\full\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\imgs\\"+linetxt+"\\wofeaturewarp\\"+linetxt+".png");
+        copyFile("D:\\result\\final_result\\mine_result_gan3\\cross_result_gan3_multiscale_epoch15\\full\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\imgs\\"+linetxt+"\\full_new\\"+linetxt+".png");
+        copyFile("D:\\result\\final_result\\swapnet\\result_model_15\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\imgs\\"+linetxt+"\\swapnet\\"+linetxt+".png");
+        copyFile("D:\\result\\final_result\\mine_result_gan3\\cross_result_gan3_multiscale_epoch20\\full\\"+linetxt+".png","C:\\Users\\ruanjie\\Desktop\\imgs\\"+linetxt+"\\full_new2\\"+linetxt+".png");
+
     }
 
     public static void copyFile(String oldPath, String newPath) {
@@ -91,6 +95,16 @@ public class Main3 {
         String subdir8 = dirPath+"\\"+"wofeaturewarp";
         dir = new File(subdir8);
         dir.mkdir();
+        String subdir9 = dirPath+"\\"+"swapnet";
+        dir = new File(subdir9);
+        dir.mkdir();
+        String subdir10 = dirPath+"\\"+"full_new";
+        dir = new File(subdir10);
+        dir.mkdir();
+        String subdir11 = dirPath+"\\"+"full_new2";
+        dir = new File(subdir11);
+        dir.mkdir();
+
     }
 
 

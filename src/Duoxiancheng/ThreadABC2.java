@@ -41,10 +41,9 @@ class PrintThread implements Runnable {
     public void print() {
         for (int i = 0; i < 10; i++) {
             try {
-
                 synchronized (synObj) {
                     if (synObj.get() % 3 == 0) {
-                        System.out.println("A");
+                        System.out.println(Thread.currentThread()+"A");
                         synObj.set(synObj.get() + 1);
                     } else if (synObj.get() % 3 == 1) {
                         System.out.println("B");
